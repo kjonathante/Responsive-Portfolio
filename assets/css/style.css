@@ -1,0 +1,146 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.125rem;
+  line-height: 2.125rem;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
+  background-image: url("../images/creampaper.png");
+}
+
+h1,h2 {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-weight: 700;
+	color: #4aaaa5;
+}
+
+h2, p {
+	margin-bottom: 1.25rem;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+	background-color: #fff;
+	margin-bottom: 2rem;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+	width: 100%;
+}
+
+.container, 
+main {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	/* clear: both; */
+}
+
+.logo {
+	width: 20rem;
+	float: left;
+	font-size: 1.875rem;
+	line-height: 5.625rem;
+	text-align: center;	
+	color: #fff;
+  background-color: #4aaaa5;
+}
+
+nav {
+	float: right;
+	line-height: 5.625rem;
+	text-align: center;
+}
+
+nav a {
+	color: #999;
+	padding-left: 15px;
+	border-left: 1px solid #efefef;
+	margin-left: 15px;
+	line-height: 1.125rem;
+}
+
+nav a:first-child {
+	padding-left: 0;
+  border-left: 0 none;
+	margin-left: 0;
+}
+
+main {
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  margin: 0 auto 6rem auto;
+  width: 100%;
+  /* max-width: 960px; */
+  /* float: left; */
+}
+
+main h2 {
+  font-size: 1.875rem;
+  line-height: 3rem;
+  padding-bottom: 1.25rem; 
+  border-bottom: 3px solid #ddd;
+}
+
+footer {
+  color: #ccc;
+  background-color: #666;
+  border-top: 8px solid #4aaaa5;
+  
+  font-size: .75rem;
+  line-height: 3rem;
+  text-align: center;
+
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* page specific */
+
+/* about me */
+.aboutme-img {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 200px;
+  height: auto;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .container, main {
+    max-width: 748px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  main {
+    max-width: 600px;
+  }
+  .col-sm {
+    width: 100%;
+  }
+
+}
+
