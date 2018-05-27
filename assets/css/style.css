@@ -14,7 +14,7 @@ body {
   background-image: url("../images/creampaper.png");
 }
 
-h1,h2 {
+h1,h2,h3 {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	font-weight: 700;
 	color: #4aaaa5;
@@ -40,11 +40,14 @@ header {
 	width: 100%;
 }
 
+.container {
+	margin: 0 auto;
+}
+
 .container, 
 main {
 	width: 100%;
 	max-width: 960px;
-	margin: 0 auto;
 	/* clear: both; */
 }
 
@@ -83,9 +86,7 @@ main {
   padding: 30px;
   border: 1px solid #ddd;
   margin: 0 auto 6rem auto;
-  width: 100%;
-  /* max-width: 960px; */
-  /* float: left; */
+  overflow: auto;
 }
 
 main h2 {
@@ -121,6 +122,72 @@ footer {
   height: auto;
 }
 
+/* portfolio */
+.placeholder {
+  width: 33.33%;
+  /* background-color: grey; */
+  padding: 10px;
+  float: left;
+}
+
+.img-holder {
+  position: relative;
+  width: 100%;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.img-holder h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  color: #fff;
+  background-color: #4aaaa5;
+  padding: 15px;
+  font-weight: 300;
+  line-height: 1.875rem;
+  text-align: center;
+}
+
+/* contact */
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  height: 35px;
+}
+
+textarea {
+  height: 200px
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 8px 30px;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa;
+  opacity: .8; /* Firefox */
+}
+
+
 @media screen and (max-width: 980px) {
 
 }
@@ -128,6 +195,9 @@ footer {
 @media screen and (max-width: 768px) {
   .container, main {
     max-width: 748px;
+  }
+  .col-md {
+    width: 50%;
   }
 }
 
